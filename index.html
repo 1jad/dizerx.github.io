@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Homepage">
+        <meta name="keywords" content="Dizer,Lounge,Fruitlab">
+        <meta name="author" content="Dizer Lounge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dizer | Home</title>
+    </head>
+    <body>
+        <div class="home">
+        <!--NavBar-->
+<div class="nav">
+    <div class="shaky"><img src="./images/logo.png" alt="logo" height="60" width="150"></div>
+    <ul>
+        <li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="./about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+        <li><a href="./services.html"><i class="fa fa-fw fa-star"></i>Services</a></li>
+        <li><a href="./contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+        </div>
+    </ul>
+<div class="text-container">
+    <div>
+        <h2 class="glow">Welcome to Dizer's Lounge</h2><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="./images/wide1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./images/wid2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./images/wide3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    </div>
+</div>
+</div>
+<footer class="footer-style">
+    <p>This footer is a joke...</p>
+    <a href="https://www.instagram.com/jadyh_" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCrDuIUHeVW436xU4ia53KvA" class="fa fa-youtube"></a>
+    <a href="https://twitter.com/DizerFL" class="fa fa-twitter"></a>
+    <p class="right-footer">Copyright © Dizer Lounge. All rights reserved </p>
+</footer>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    </body>
+</html>

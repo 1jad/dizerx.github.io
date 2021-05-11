@@ -1,0 +1,283 @@
+body{
+    position: relative;
+    width:100%;
+    display: contents;
+}
+.nav{
+    height:50px;
+    
+}
+.nav div{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    padding: 5px;
+}
+.nav ul{
+    position: absolute;
+    right: 5px;
+    margin-top: 20px;
+}
+.nav li{
+    display: inline-block;
+}
+.nav ul li a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 19px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 17px;
+    transition:0.5s;
+}
+@media only screen and (max-width: 768px){
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .nav img{
+        width: 100px;
+        height: 50px;
+    }
+}
+.nav a:hover {
+    background-color:rgba(147,161,193,255);
+    color: black;
+}
+.shaky img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+.home{
+    background: url("../images/ssss.jpg");
+    background-size: cover;
+    height: 150vh;
+}
+.home .text-container{
+    position:absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    color: white;
+}
+.home .text-container h2 {
+    right: 29%;
+    position: relative;
+    font-family: "Sofia", sans-serif;
+}
+.about .about-content{
+    margin: 150px auto 0 auto;
+    width: 500px;
+}
+.about .about-content h1{
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: red;
+}
+.about .about-content p{
+    text-align:justify ;
+    font-family: 'Ubuntu', sans-serif;
+    color:midnightblue;
+}
+.services .services-content{
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+.services .services-content h1{
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 80px 0px 0 40px;
+    color: red;
+}
+.services .services-content p{
+    text-align: center;
+    color: black;
+    font-family:'Times New Roman', Times, serif
+}
+.youtube {
+    width: 200px;
+    height: 200px;
+}
+.fruitlab {
+    width: 340px;
+    height: 100px;
+}
+.converter {
+    width: 180px;
+    height: 180px;
+}
+.services-content .card-container ul{
+    padding: 0;
+}
+.services-content .card-container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+}
+.services-content .card-container ul li p {
+    text-align: justify;
+    color:black;
+    font-family:'Times New Roman', Times, serif
+}
+.contact .contact-content{
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+.contact .contact-content h1{
+    font-family: 'Roboto', sans-serif;
+    color: red;
+}
+.contact .contact-content .address-holder{
+    font-family: 'Lato', Times, serif;
+}
+.home .marquee-home{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 10px;
+}
+.footer-style{
+    height:185px;
+    background:rgba(27,37,57,255);
+    overflow: hidden;
+    color: white;
+    padding-left: 15px;
+    font-size: 17px;
+}
+.footer-style .right-footer{
+    position: absolute;
+    right: 5px;
+    padding-right: 15px;
+}
+.footer-style .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 17px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.fa-instagram {
+    background: purple;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa:hover {
+    opacity: 0.7;  
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  right: 30%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  right: 30%;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.glow {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2268aa, 0 0 40px #2268aa, 0 0 50px #2268aa, 0 0 60px #2268aa, 0 0 70px #2268aa;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 100px rgb(6, 25, 53); 
+}
+   
+ /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #194d7e; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0c2c49; 
+}
+
